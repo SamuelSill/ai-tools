@@ -1,0 +1,5 @@
+{
+  "name": "fix-review-feedback",
+  "description": "Interactively address review comments on your PR one by one",
+  "version": "1.0.0"
+}
