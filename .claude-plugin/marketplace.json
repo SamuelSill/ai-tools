@@ -2,19 +2,13 @@
   "name": "ai-tools",
   "owner": { "name": "Samuel Silman" },
   "metadata": {
-    "description": "AI-powered tools for GitHub PR reviews and feedback resolution"
+    "description": "A collection of AI-powered skills for software development workflows"
   },
   "plugins": [
     {
-      "name": "review-pr",
-      "source": "./plugins/review-pr",
-      "description": "Structured PR review with JIRA context, module onboarding, and problem tracking",
-      "version": "1.0.0"
-    },
-    {
-      "name": "fix-review-feedback",
-      "source": "./plugins/fix-review-feedback",
-      "description": "Interactively address review comments on your PR one by one",
+      "name": "ai-tools",
+      "source": ".",
+      "description": "A collection of AI-powered skills for software development workflows",
       "version": "1.0.0"
     }
   ]
