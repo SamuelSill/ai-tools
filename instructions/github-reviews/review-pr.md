@@ -2,26 +2,56 @@
 
 **STOP Before you review ANY change, if the user asks you to review another person's PR, you MUST:**
 
-* Find the relevant JIRA tickets this PR aims to resolve, and explain them to the user - verify that they understand.
-* If the PR introduces nontrivial modifications to island modules, for each of those modules -
-  Ask the user if they need to be onboarded on the module. If so, dive deep into the module (before the changes) and understand its role in the project and what it aims to achieve.
-  Then explain the module simply:
-  * Where in the project is it used?
-  * What is its purpose?
-  * Broadly, how is it implemented? What's the main idea behind the implementation/algorithm?
-  * If there's any interface between this module and another one modified in the PR, elaborate on it.
-* Once the user has a good understanding of the code before the changes, start reviewing them. Go over each commit in the PR, and for each of them:
-  * Explain briefly what it aims to solve.
-  * Explain any nontrivial changes - break down new modules, look at modifications in general and explain what they aim to achieve, etc.
-  * Try to find potential bugs that might crash the code.
-  * Look for places where the code might be inefficient unnecessarily.
-  * If the code modifies web interfaces that other projects rely on (for example extension API), verify backwards compatibility.
-  * Verify that the code is readable and clean.
-  * Review the commit/commit message - does the commit make sense as a standalone addition to the project? Does the message describe the change well enough?
-  For any problem that you find, tell the user about it. If they agree - keep note of the problem, otherwise forget about it.
+1. **Explain the Issue that Led to the Change**
 
-* When you're done, ask for confirmation to show a full table of the problems with the following columns (sorted by category):
-  * Code location
-  * Category - Bug/Crash/Readability/etc.
-  * Comment - a suggested comment to post on the PR. Try to make it short and simple
-  * Fix Suggestion - only when the fix to the problem is really small, otherwise keep empty.
+Find the relevant issue tickets this PR aims to resolve, and explain them to the user - verify that they understand.
+
+2. **Onboard the User Step by Step on the Relevant Modules**
+
+One by one, for each one of the modules that has nontrivial modifications in the PR, ask the user if they need to be onboarded on the module.
+If so, dive deep into the module (before the changes) and understand its role in the project and what it aims to achieve.
+Then explain the module simply:
+* Where in the project is it used?
+* What is its purpose?
+* Broadly, how is it implemented? What's the main idea behind the implementation/algorithm?
+* If there's any interface between this module and another one modified in the PR, elaborate on it.
+
+Wait for user confirmation before proceeding to the review.
+
+3. **Review the PR Silently**
+
+Without talking to the user yet, go over each commit in the PR one by one, and for each commit:
+* Understand what it aims to solve.
+* Understand any nontrivial changes - break down new modules, look at modifications in general and understand what they aim to achieve, etc.
+* Try to find potential bugs that might crash the code.
+* Look for places where the code might be inefficient unnecessarily.
+* If the code modifies web interfaces that other projects rely on (for example extension API), verify backwards compatibility.
+* Verify that the code is readable and clean.
+* Review the commit/commit message - does the commit make sense as a standalone addition to the project? Does the message describe the change well enough?
+
+Keep track of any problem that you find in this part, do not discuss about them with the user yet.
+
+4. **Discuss Each Problem with the User**
+
+For each problem you found in the previous step, one by one:
+* Explain the problem simply to the user.
+* Ask the user if they agree with the problem. If so, keep note of it. Otherwise forget about the problem.
+
+When you're done discussing all of the problems, proceed with the review summary.
+
+5. **Summarize the Problems**
+
+Ask for confirmation to show a full table of the problems with the following columns (sorted by category):
+* Code location
+* Category - Bug/Crash/Readability/etc.
+* Comment - a suggested comment to post on the PR. Try to make it short and simple
+* Fix Suggestion - only when the fix to the problem is really small, otherwise keep empty.
+
+6. **Suggest Help with Replying to the Review**
+
+For each problem:
+* Find the most fitting location in the review to comment.
+* Write a simple and readable comment describing the problem. Keep it short. If you have a short fix suggestion, add it to the comment.
+  Iterate with the user on the comment until they are content with it, and when you're done, comment it on the PR.
+* If the problem is relevant to many code locations, ask for confirmation to comment a reference comment on all of them, that redirects
+  the PR assignee to look at one comment that explains the issue.
