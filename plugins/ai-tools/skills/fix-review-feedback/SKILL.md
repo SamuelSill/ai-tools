@@ -3,6 +3,12 @@ name: fix-review-feedback
 description: Use when the user has received review comments on their PR and needs help addressing them. Goes through each comment interactively, validating and suggesting fixes.
 ---
 
+**STOP Before you reply to any comment on a PR:**
+
+* Always prefix the reply with `(Replied via [NAME OF AGENT])`.
+* Always ask for confirmation before posting the reply.
+* Never resolve the comments yourself.
+
 # Viewing PR comments and reviews
 
 To view comments and reviews on a PR, use separate commands (not chained with `;`) so they get auto-approved:

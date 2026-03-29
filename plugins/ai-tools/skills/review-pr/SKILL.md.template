@@ -3,6 +3,8 @@ name: review-pr
 description: Use when the user wants to review another person's GitHub PR. Provides structured analysis with JIRA context, module onboarding, and a final problem summary table.
 ---
 
+{{instructions/claude/replying-to-pr-comments.md}}
+
 {{instructions/claude/viewing-pr-comments.md}}
 
 {{instructions/github-reviews/review-pr.md}}

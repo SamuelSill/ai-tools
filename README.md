@@ -33,12 +33,11 @@ The skills will be available automatically in your sessions. Claude will invoke 
 
 ```
 ai-tools/
+├── build.py                               # Assembles SKILL.md from templates
+└── prek.toml                              # Pre-commit hook configuration
 ├── instructions/                          # Source of truth (tool-agnostic)
 │   ├── claude/                            # Claude-specific helpers
-│   │   └── viewing-pr-comments.md
 │   └── github-reviews/                    # Shared review workflow instructions
-│       ├── review-pr.md
-│       └── fix-review-feedback.md
 ├── plugins/                               # Claude Code plugin
 │   └── ai-tools/
 │       ├── .claude-plugin/plugin.json
@@ -46,11 +45,9 @@ ai-tools/
 │           ├── review-pr/
 │           │   ├── SKILL.md.template      # Template referencing instructions
 │           │   └── SKILL.md               # Generated (do not edit directly)
-│           └── fix-review-feedback/
-│               ├── SKILL.md.template
-│               └── SKILL.md               # Generated (do not edit directly)
-├── build.py                               # Assembles SKILL.md from templates
-└── prek.toml                              # Pre-commit hook configuration
+│           .
+│           .
+│           .
 ```
 
 ### How It Works
