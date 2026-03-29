@@ -7,4 +7,4 @@ description: Use when the user wants to review another person's GitHub PR. Provi
 
 {{instructions/claude/viewing-pr-comments.md}}
 
-{{instructions/github-reviews/review-pr.md}}
+{{instructions/reviews/review.md}}

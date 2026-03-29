@@ -39,7 +39,7 @@ ai-tools/
 └── prek.toml                              # Pre-commit hook configuration
 ├── instructions/                          # Source of truth (tool-agnostic)
 │   ├── claude/                            # Claude-specific helpers
-│   └── github-reviews/                    # Shared review workflow instructions
+│   └── reviews/                           # Review workflow instructions
 ├── plugins/                               # Claude Code plugins
 │   └── pr/                                # PR review workflows
 │       ├── .claude-plugin/plugin.json

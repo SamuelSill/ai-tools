@@ -7,4 +7,4 @@ description: Use when the user has received review comments on their PR and need
 
 {{instructions/claude/viewing-pr-comments.md}}
 
-{{instructions/github-reviews/fix-review-feedback.md}}
+{{instructions/reviews/respond.md}}
