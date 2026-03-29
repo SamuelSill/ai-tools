@@ -11,7 +11,9 @@ description: Use when the user has received review comments on their PR and need
 
 # Viewing PR comments and reviews
 
-To view comments and reviews on a PR, use separate commands (not chained with `;`) so they get auto-approved:
+To view comments and reviews on a PR, use separate commands (not chained with `;`) so they get auto-approved.
+
+For GitHub CLI, use the following:
 
 - PR reviews: `gh pr view <number> --json reviews --jq '.reviews[] | "**\(.author.login)** (\(.state)):\n\(.body)\n---"'`
 - Inline review comments: `gh api repos/{owner}/{repo}/pulls/<number>/comments --jq '.[] | "**\(.user.login)** on \(.path):\n\(.body)\n---"'`
