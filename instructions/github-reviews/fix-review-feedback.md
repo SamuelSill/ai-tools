@@ -16,3 +16,8 @@ Note that some fixes may automatically fix the other comments - don't skip them.
 Instead, explain why they were already resolved, and wait for confirmation.
 
 * If a comment specifies multiple different issues, split the comment to those issues and do the above process for each of them.
+
+**When you're done going over all the comments:**
+
+If any changes were made, make sure to verify them via building/running tests.
+If there are no relevant tests - give instructions to the user on how to verify the changes.
