@@ -2,11 +2,16 @@
 
 **STOP Before you review ANY change, if the user asks you to review another person's PR, you MUST:**
 
-1. **Explain the Issue that Led to the Change**
+1. **Read through the Project's Instructions**
+
+Before you do anything, make sure you've read the project's guidelines, so that you understand how the project works,
+what are the best practices, and what to look for in a review.
+
+2. **Explain the Issue that Led to the Change**
 
 Find the relevant issue tickets this PR aims to resolve, and explain them to the user - verify that they understand.
 
-2. **Onboard the User Step by Step on the Relevant Modules**
+3. **Onboard the User Step by Step on the Relevant Modules**
 
 One by one, for each one of the modules that has nontrivial modifications in the PR, ask the user if they need to be onboarded on the module.
 If so, dive deep into the module (before the changes) and understand its role in the project and what it aims to achieve.
@@ -18,7 +23,7 @@ Then explain the module simply:
 
 Wait for user confirmation before proceeding to the review.
 
-3. **Review the PR Silently**
+4. **Review the PR Silently**
 
 Without talking to the user yet, go over each commit in the PR one by one, and for each commit:
 * Understand what it aims to solve.
@@ -31,7 +36,7 @@ Without talking to the user yet, go over each commit in the PR one by one, and f
 
 Keep track of any problem that you find in this part, do not discuss about them with the user yet.
 
-4. **Discuss Each Problem with the User**
+5. **Discuss Each Problem with the User**
 
 For each problem you found in the previous step, one by one:
 * Explain the problem simply to the user.
@@ -39,7 +44,7 @@ For each problem you found in the previous step, one by one:
 
 When you're done discussing all of the problems, proceed with the review summary.
 
-5. **Summarize the Problems**
+6. **Summarize the Problems**
 
 Ask for confirmation to show a full table of the problems with the following columns (sorted by category):
 * Code location
@@ -47,7 +52,7 @@ Ask for confirmation to show a full table of the problems with the following col
 * Comment - a suggested comment to post on the PR. Try to make it short and simple
 * Fix Suggestion - only when the fix to the problem is really small, otherwise keep empty.
 
-6. **Suggest Help with Replying to the Review**
+7. **Suggest Help with Replying to the Review**
 
 For each problem:
 * Find the most fitting location in the review to comment.
