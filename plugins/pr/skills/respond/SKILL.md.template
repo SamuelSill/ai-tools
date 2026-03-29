@@ -1,5 +1,5 @@
 ---
-name: fix-review-feedback
+name: respond
 description: Use when the user has received review comments on their PR and needs help addressing them. Goes through each comment interactively, validating and suggesting fixes.
 ---
 

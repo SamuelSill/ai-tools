@@ -1,30 +1,32 @@
 # ai-tools
 
-A collection of AI-powered skills for software development workflows.
+A collection of AI-powered skills for software development workflows, organized as plugins.
 
-## Available Skills
+## Plugins
+
+### `pr` — PR Review Workflows
 
 | Skill | Description |
 |-------|-------------|
-| `review-pr` | Structured PR review with JIRA context, module onboarding, and a problem summary table |
-| `fix-review-feedback` | Interactively address review comments on your PR one by one |
+| `pr:review` | Structured PR review with JIRA context, module onboarding, and a problem summary table |
+| `pr:respond` | Interactively address review comments on your PR one by one |
 
 ## Installation
 
 ### Claude Code
 
-Add the marketplace and install the plugin:
+Add the marketplace and install plugins:
 
 ```
 /plugin marketplace add SamuelSill/ai-tools
-/plugin install ai-tools@ai-tools
+/plugin install ai-tools@pr
 ```
 
-The skills will be available automatically in your sessions. Claude will invoke them when relevant, or you can trigger them explicitly:
+Skills will be available automatically in your sessions. Claude will invoke them when relevant, or you can trigger them explicitly:
 
 ```
-/review-pr
-/fix-review-feedback
+/review
+/respond
 ```
 
 ## Development
@@ -38,11 +40,11 @@ ai-tools/
 ├── instructions/                          # Source of truth (tool-agnostic)
 │   ├── claude/                            # Claude-specific helpers
 │   └── github-reviews/                    # Shared review workflow instructions
-├── plugins/                               # Claude Code plugin
-│   └── ai-tools/
+├── plugins/                               # Claude Code plugins
+│   └── pr/                                # PR review workflows
 │       ├── .claude-plugin/plugin.json
 │       └── skills/
-│           ├── review-pr/
+│           ├── review/
 │           │   ├── SKILL.md.template      # Template referencing instructions
 │           │   └── SKILL.md               # Generated (do not edit directly)
 │           .
@@ -64,7 +66,7 @@ This allows the same instructions to be reused across different AI tools while k
 ### Adding a New Skill
 
 1. Create instruction files in `instructions/`
-2. Create a new directory under `plugins/ai-tools/skills/<skill-name>/`
+2. Create a new directory under `plugins/<plugin-name>/skills/<skill-name>/`
 3. Add a `SKILL.md.template` with frontmatter and `{{...}}` references to your instructions
 4. Run `python3 build.py` to verify the output
 5. Commit — the hook handles the rest

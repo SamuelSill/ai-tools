@@ -1,5 +1,5 @@
 ---
-name: review-pr
+name: review
 description: Use when the user wants to review another person's GitHub PR. Provides structured analysis with JIRA context, module onboarding, and a final problem summary table.
 ---
 

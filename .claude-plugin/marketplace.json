@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "ai-tools",
-      "source": "./plugins/ai-tools",
-      "description": "A collection of AI-powered skills for software development workflows",
+      "name": "pr",
+      "source": "./plugins/pr",
+      "description": "PR review and feedback workflow skills",
       "version": "1.0.0"
     }
   ]
