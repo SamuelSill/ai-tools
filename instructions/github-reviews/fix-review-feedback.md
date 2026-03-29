@@ -8,6 +8,7 @@ Go over each of the comments one by one, and for each one:
 If it wasn't addressed yet - determine if the comment is valid and describes a real issue in the code:
 - If it's not valid, explain why. Ask for confirmation to reply to the reviewer on behalf of the user.
 - If it's valid, determine a fix to the comment and suggest it to the user.
+  When you're done, ask for confirmation to reply with a 👍 reaction to the comment, indicating that it's fixed.
 
 Wait for the user's confirmation before moving to the next comment - they might modify and push fixes before proceeding.
 
