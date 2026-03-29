@@ -2,6 +2,9 @@
 
 **STOP Before you review ANY change, if the user asks you to review another person's PR, you MUST:**
 
+Go through the following steps one by one.
+**IMPORTANT:** Wait for user confirmation before moving between these steps.
+
 1. **Read through the Project's Instructions**
 
 Before you do anything, make sure you've read the project's guidelines, so that you understand how the project works,
@@ -41,6 +44,7 @@ Keep track of any problem that you find in this part, do not discuss about them 
 For each problem you found in the previous step, one by one:
 * Explain the problem simply to the user.
 * Ask the user if they agree with the problem. If so, keep note of it. Otherwise forget about the problem.
+**IMPORTANT:** Wait for user confirmation before moving to the next problem.
 
 When you're done discussing all of the problems, proceed with the review summary.
 
