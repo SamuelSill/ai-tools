@@ -69,7 +69,7 @@ Keep track of any problem that you find in this part, do not discuss about them 
 
 5. **Discuss Each Problem with the User**
 
-For each problem you found in the previous step, one by one:
+Go over each problem you found in the previous step sorted by the commit order, and one by one:
 * Explain the problem simply to the user.
 * Ask the user if they agree with the problem. If so, keep note of it. Otherwise forget about the problem.
 **IMPORTANT:** Wait for user confirmation before moving to the next problem.
