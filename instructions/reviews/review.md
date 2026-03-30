@@ -46,9 +46,17 @@ Go over each problem you found in the previous step sorted by the commit order, 
 * Ask the user if they agree with the problem. If so, keep note of it. Otherwise forget about the problem.
 **IMPORTANT:** Wait for user confirmation before moving to the next problem.
 
-When you're done discussing all of the problems, proceed with the review summary.
+When you're done discussing all of the problems, proceed to the next step.
 
-6. **Summarize the Problems**
+6. **Ask the User for Problems**
+
+Ask the user if they want to dicuss any issues in the PR. For each issue, check if it's actually valid:
+* If it's valid, keep note of it.
+* If it isn't, tell the user why you think it's not valid, and ask if the user still wants to keep it.
+
+When you're done discussing all of the user's problems, proceed to the summary.
+
+7. **Summarize the Problems**
 
 Ask for confirmation to show a full table of the problems with the following columns (sorted by category):
 * Code location
@@ -56,7 +64,7 @@ Ask for confirmation to show a full table of the problems with the following col
 * Comment - a suggested comment to post on the PR. Try to make it short and simple
 * Fix Suggestion - only when the fix to the problem is really small, otherwise keep empty.
 
-7. **Suggest Help with Replying to the Review**
+8. **Suggest Help with Replying to the Review**
 
 For each problem:
 * Find the most fitting location in the review to comment.
