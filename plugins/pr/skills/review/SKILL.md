@@ -3,6 +3,8 @@ name: review
 description: Use when the user wants to review another person's GitHub PR. Provides structured analysis with JIRA context, module onboarding, and a final problem summary table.
 ---
 
+# Replying to PR Comments
+
 **STOP Before you reply to any comment on a PR:**
 
 * Always prefix the reply with an expandable "Replied via" note using this format:
@@ -20,9 +22,9 @@ To view comments and reviews on a PR, use separate commands (not chained with `;
 
 For GitHub CLI, use the following:
 
-- PR reviews: `gh pr view <number> --json reviews --jq '.reviews[] | "**\(.author.login)** (\(.state)):\n\(.body)\n---"'`
-- Inline review comments: `gh api repos/{owner}/{repo}/pulls/<number>/comments --jq '.[] | "**\(.user.login)** on \(.path):\n\(.body)\n---"'`
-- PR conversation comments: `gh api repos/{owner}/{repo}/issues/<number>/comments --jq '.[] | "**\(.user.login)**:\n\(.body)\n---"'`
+* PR reviews: `gh pr view <number> --json reviews --jq '.reviews[] | "**\(.author.login)** (\(.state)):\n\(.body)\n---"'`
+* Inline review comments: `gh api repos/{owner}/{repo}/pulls/<number>/comments --jq '.[] | "**\(.user.login)** on \(.path):\n\(.body)\n---"'`
+* PR conversation comments: `gh api repos/{owner}/{repo}/issues/<number>/comments --jq '.[] | "**\(.user.login)**:\n\(.body)\n---"'`
 
 * When showing PR comments/replies to the user, if the comment is about specific lines, **ALWAYS** show the user the lines in question for context.
 
